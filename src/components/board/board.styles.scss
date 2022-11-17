@@ -1,0 +1,29 @@
+.board-container {
+	width: 470px;
+	height: 470px;
+	background-color: greenyellow;
+	margin: 15vh auto;
+	border: 1px solid black;
+}
+
+.board-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10px;
+}
+
+.cell {
+	font-size: 40px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		cursor: pointer;
+	}
+	&:active {
+		background-color: rgb(170, 228, 84);
+	}
+}
